@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            background-color: rgb(255, 255, 255);
+            margin:0px;
+           
+
+
+            /* '*' selector is the universal selector and is used to reset the  all the changes in th*/
+        
+         }
+
+      h1{
+        border: 2px solid blue;
+        padding:100px;  /*This is the distance between the h1 content and the border of the h1*/
+      }
+
+      p{
+        color:red;
+        border: 2px solid rgb(255, 0, 0);
+        padding:30px; /*This is the distance between the p content and the border of the h1*/
+        
+      }
+
+
+
+      /*
+      
+      The big difference between the '*' and the body selector is that 
+      body sets all the value to the 0px except the top margin (default margin) and the margin between 
+      the individual elements but the '*' sets all the margin including the top , bottom , right , left to zero around the element.
+      
+      
+      */
+
+
+
+
+
+      /*
+      
+        when I do this 
+        body {
+            margin: 0;
+        }
+
+       still I have seen that some of the space from the top is still present  , why is it ? 
+
+
+       you might still see extra space at the top. This happens because of default margin on <h1>, <p>, or other block elements inside the body that's why to reset everything margin and the padding  , we prefer the *{} instead of the body{} 
+
+      
+      
+      
+      
+      
+      
+      */
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
