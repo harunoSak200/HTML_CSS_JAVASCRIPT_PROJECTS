@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        *{
+            margin :0px ; 
+            padding:0px ; 
+            box-sizing: border-box;
+
+
+            /* box-sizing: content-box;   this is the default in the which
+            on providing the border the height of the box becomes like this : 
+            
+            height_new = height+border_height
+
+
+
+            box-sizing:border-box : 
+            In this the new height remains the same , but the content inner content get's 
+            compressed , in leyman terms I can say in this case instead of increasing the border 
+            in the outer direction , it increased in the inner direction , giving a closed and the 
+            compact look ,.
+            
+            
+            */ 
+        }
+
+        #box-outer{
+            height: 600px;
+            width:200px;
+            background-color: yellow;
+        
+        #box-inner{
+            height:200px ; 
+            width :200px ; 
+            background-color :orange;
+            border: 50px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box-outer">
+        <div class="box" id="box-inner">
+
+        </div>
+    </div>
+</body>
+</html>

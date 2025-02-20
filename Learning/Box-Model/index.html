@@ -8,28 +8,69 @@
         *{
             /* padding:0px ;  */
             margin:0px;
-            font-size : 40px ; 
+            padding:0px ; 
+            box-sizing:border-box ; 
+
+
 
         }
+
+        
         #box-one{
             background-color: chocolate;
-            border:2px solid black ; 
-            padding:0px ;
+            border:2px solid rgb(255, 0, 0) ; 
+            height:500px ; 
+            width : 500px  ;
+            margin-bottom:20px ; 
+            font-size: 50px;
         }
         #box-two{
             background-color: antiquewhite;
-            border:2px solid black;
+            border:2px solid rgb(200, 243, 6);
+            height: 100px ; 
+            width : 100px ; 
+            padding: 50px ; 
         }
     </style>
 
 </head>
 
 <body>
+
+    <!-- 
+    
+
+    nesting div : 
+
+
+    <div> elements can be nested inside each other without any issues.
+    This is because <div> is a generic block container that accepts any type of elements inside it.
+    -->
+    <div class="box" id="box-one">
+        <div class="box" id="box-two">
+
+        </div>
+    </div>
+
+
+
+
+    <!-- 
+    
+    nesting p : 
+
+    Invalid HTML: <p> elements cannot contain other <p> elements inside them.
+    Browsers automatically correct this mistake by closing the first <p> tag before opening the second one.
+    
+    
+    -->
+
     <p class="box" id="box-one">
-        ONE
+        <p class="box" id="box-two">
+            
+        </p>
     </p>
-    <!-- <p class="box" id="box-two">
-        TWO
-    </p> -->
+
+
 </body>
 </html>

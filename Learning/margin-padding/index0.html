@@ -9,32 +9,50 @@
         *{
             background-color: rgb(255, 255, 255);
             margin:0px;
+            padding:0px;
            
 
 
-            /* '*' selector is the universal selector and is used to reset the  all the changes in th*/
+            /* '*' selector is the universal selector and is used to reset the  all the changes in tag*/
         
          }
 
       h1{
         border: 2px solid blue;
-        padding:100px;  /*This is the distance between the h1 content and the border of the h1*/
+        /* padding:100px;  This is the distance between the h1 content and the border of the h1 */
       }
 
       p{
         color:red;
         border: 2px solid rgb(255, 0, 0);
-        padding:30px; /*This is the distance between the p content and the border of the h1*/
+        /* padding:30px; This is the distance between the p content and the border of the h1 */
         
       }
+      /* button{
+        height: 100px;
+        width:100px ;
+      } */
+
+
 
 
 
       /*
-      
+      note : 
       The big difference between the '*' and the body selector is that 
       body sets all the value to the 0px except the top margin (default margin) and the margin between 
       the individual elements but the '*' sets all the margin including the top , bottom , right , left to zero around the element.
+      
+      
+      */
+
+      /*
+      note : 
+
+      doing the margin:0px can reflect the changes but the padding : 0px do not 
+      reflect much changes as in the div , h2 , p by default they have no padding 
+      but in some tags like input , button  , textarea they have their default padding
+      so doing the padding reset may make visible changes in these tag.
       
       
       */
@@ -67,5 +85,6 @@
 <body>
     <h1>Hello, World!</h1>
     <p>This is a paragraph.</p>
+    <button>CLICK ME</button>
 </body>
 </html>
